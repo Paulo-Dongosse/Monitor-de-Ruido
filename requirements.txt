@@ -1,0 +1,21 @@
+# Dependências principais da API (FastAPI)
+fastapi
+uvicorn
+
+# Validação e autenticação
+pydantic
+passlib[bcrypt]
+pyjwt
+
+# Dashboard e visualização
+streamlit
+requests
+pandas
+matplotlib
+
+# Sensor de ruído
+sounddevice
+numpy
+
+# Testes
+pytest

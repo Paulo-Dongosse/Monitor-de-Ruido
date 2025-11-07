@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: monitor_ruido_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./backend/data:/app/data         # Volume para armazenar o banco SQLite
+    environment:
+      - SECRET_KEY=segredo_super_secreto
+      - DB_FILE=/app/data/database.db    # Caminho completo do banco dentro do container
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  dashboard:
+    build: ./dashboard
+    container_name: monitor_ruido_dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./dashboard:/app
+    depends_on:
+      - backend
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+
+  sensor:
+    build: ./sensor
+    container_name: monitor_ruido_sensor
+    depends_on:
+      - backend
+    volumes:
+      - ./sensor:/app
+    command: python sensor_noise.py
