@@ -1,7 +1,22 @@
-﻿<div align="center">
+
 
 # 🎧 Monitor de Ruído — Sistema Inteligente de Monitoramento Acústico
 
+
+---
+
+## 🌍 Propósito Social
+
+O **Monitor de Ruído** é um projeto criado com o propósito de **ajudar a população a monitorar níveis de som abusivos** em ambientes urbanos — como **baladas, bares, fábricas e eventos noturnos** — que frequentemente ultrapassam os limites aceitáveis e prejudicam o **bem-estar, a saúde e o descanso das pessoas**.
+
+Através de sensores conectados e um sistema inteligente de análise, o projeto busca **dar visibilidade a um problema silencioso: a poluição sonora**.
+
+💬 **Missão:**  
+Promover ambientes mais saudáveis e respeitosos através da tecnologia,  
+unindo **dados, consciência ambiental e cidadania**.
+
+---
+﻿<div align="center">
 <table align="center">
 <tr>
 <td><img src="tabela.png" width="350"/></td>
@@ -18,18 +33,6 @@
 </table>
 
 </div>
-
----
-
-## 🌍 Propósito Social
-
-O **Monitor de Ruído** é um projeto criado com o propósito de **ajudar a população a monitorar níveis de som abusivos** em ambientes urbanos — como **baladas, bares, fábricas e eventos noturnos** — que frequentemente ultrapassam os limites aceitáveis e prejudicam o **bem-estar, a saúde e o descanso das pessoas**.
-
-Através de sensores conectados e um sistema inteligente de análise, o projeto busca **dar visibilidade a um problema silencioso: a poluição sonora**.
-
-💬 **Missão:**  
-Promover ambientes mais saudáveis e respeitosos através da tecnologia,  
-unindo **dados, consciência ambiental e cidadania**.
 
 ---
 
@@ -85,5 +88,6 @@ monitor_ruido/
 ├── requirements.txt
 ├── setup.sh
 └── README.md
+
 
 
