@@ -10,6 +10,10 @@
 <tr>
 <td><img src="linha.png" width="350"/></td>
 <td><img src="dispersao.png" width="350"/></td>
+<tr>
+<td><img src="filtro.png" width="350"/></td>
+<td><img src="api.png" width="350"/></td>
+</tr>
 </tr>
 </table>
 
@@ -81,4 +85,5 @@ monitor_ruido/
 ├── requirements.txt
 ├── setup.sh
 └── README.md
+
 
